@@ -3,6 +3,7 @@ import SwiftUI
 
 struct CellDesign: View {
     var item = MenuItem()
+    @State private var count: Int = 0
     
     var body: some View {
         
@@ -19,18 +20,19 @@ struct CellDesign: View {
                     Text("\(String(format: "%.2f", self.item.price!))").foregroundColor(.blue)
                 }
                 
+                Spacer()
+                
+                VStack(alignment: .trailing){
+                    
+                    Stepper("", value: $count, in: 0...10)
+                    Text("Count:  \(self.item.count + count)")
+                    Spacer()
+                    Text("Sum: \(Float(self.item.count + count)*(self.item.price!))")
+                
+                }
+                
             }
-            
-            
-            
-            
         }
         
-    }
-}
-
-struct MyView_Previews: PreviewProvider {
-    static var previews: some View {
-        CellDesign()
     }
 }
