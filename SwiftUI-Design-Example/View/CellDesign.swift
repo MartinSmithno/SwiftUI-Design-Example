@@ -27,7 +27,7 @@ struct CellDesign: View {
                     Stepper("", value: $count, in: 0...10)
                     Text("Count:  \(self.item.count + count)")
                     Spacer()
-                    Text("Sum: \(Float(self.item.count + count)*(self.item.price!))")
+                    Text("Sum: \(String(format: "%.2f", Float(self.item.count + count)*(self.item.price!)))")
                 
                 }
                 
