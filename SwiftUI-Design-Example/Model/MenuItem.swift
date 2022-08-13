@@ -6,16 +6,18 @@ class MenuItem: Identifiable {
     var name: String?
     var photo: String?
     var price: Float?
+    var type: String?
     
     init() {
         
     }
     
-    init(id: String, name: String, photo: String, price: Float) {
+    init(id: String, name: String, photo: String, price: Float, type: String) {
         self.id = id
         self.name = name
         self.photo = photo
         self.price = price
+        self.type = type
     }
     
 }
