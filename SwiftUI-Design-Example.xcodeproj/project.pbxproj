@@ -75,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				2C5E1D9928A6E36100B1C108 /* MenuItem.swift */,
-				2C5E1D9B28A6E71400B1C108 /* CellDesign.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -83,6 +82,7 @@
 		2C5E1D9828A6E2E600B1C108 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2C5E1D9B28A6E71400B1C108 /* CellDesign.swift */,
 				2C5E1D8B28A6CB3A00B1C108 /* ContentView.swift */,
 				2C5E1D8928A6CB3A00B1C108 /* SwiftUI_Design_ExampleApp.swift */,
 			);
