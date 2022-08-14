@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C498FEA28A9806A0095146E /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C498FE928A9806A0095146E /* OrderVC.swift */; };
+		2C498FEC28A982E60095146E /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C498FEB28A982E60095146E /* CheckboxStyle.swift */; };
 		2C5E1D8A28A6CB3A00B1C108 /* SwiftUI_Design_ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E1D8928A6CB3A00B1C108 /* SwiftUI_Design_ExampleApp.swift */; };
 		2C5E1D8C28A6CB3A00B1C108 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E1D8B28A6CB3A00B1C108 /* ContentView.swift */; };
 		2C5E1D8E28A6CB3D00B1C108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5E1D8D28A6CB3D00B1C108 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C498FE928A9806A0095146E /* OrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderVC.swift; sourceTree = "<group>"; };
+		2C498FEB28A982E60095146E /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
 		2C5E1D8628A6CB3A00B1C108 /* SwiftUI-Design-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Design-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5E1D8928A6CB3A00B1C108 /* SwiftUI_Design_ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Design_ExampleApp.swift; sourceTree = "<group>"; };
 		2C5E1D8B28A6CB3A00B1C108 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				2C5E1D9928A6E36100B1C108 /* MenuItem.swift */,
+				2C498FEB28A982E60095146E /* CheckboxStyle.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -85,6 +90,7 @@
 				2C5E1D9B28A6E71400B1C108 /* CellDesign.swift */,
 				2C5E1D8B28A6CB3A00B1C108 /* ContentView.swift */,
 				2C5E1D8928A6CB3A00B1C108 /* SwiftUI_Design_ExampleApp.swift */,
+				2C498FE928A9806A0095146E /* OrderVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +169,8 @@
 				2C5E1D9C28A6E71400B1C108 /* CellDesign.swift in Sources */,
 				2C5E1D8C28A6CB3A00B1C108 /* ContentView.swift in Sources */,
 				2C5E1D8A28A6CB3A00B1C108 /* SwiftUI_Design_ExampleApp.swift in Sources */,
+				2C498FEC28A982E60095146E /* CheckboxStyle.swift in Sources */,
+				2C498FEA28A9806A0095146E /* OrderVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
