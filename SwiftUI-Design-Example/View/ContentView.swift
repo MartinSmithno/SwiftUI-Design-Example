@@ -5,6 +5,7 @@ struct ContentView: View {
     @State private var items: [MenuItem] = [MenuItem]()
     
     //We need to create array or we can create .json mock data file to feed the list
+    @State var order: [MenuItem] = [MenuItem(id: "13kadayif", name: "Kadayif", photo: "13.kadayif", price: 3.5, type: "toRest", count: 0)]
     
     var body: some View {
         
@@ -55,6 +56,11 @@ struct ContentView: View {
     
                     }.frame(height: 150)
                 }
+                
+                Button("ORDER", action : {
+                }).buttonStyle(.borderedProminent)
+                
+                NavigationLink("Order Page", destination: OrderVC(order: order))
                 
             }.navigationBarTitle("Menu")
         }.onAppear(){
