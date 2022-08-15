@@ -11,58 +11,68 @@ struct ContentView: View {
         
         NavigationView(){
             
-            List(){
+            VStack(){
                 
-                Section(header:Text("to drink")){
+                List(){
                     
-                    ForEach(items){ item in
+                    Section(header:Text("to drink")){
                         
-                        if item.type == "toDrink" {
-                            CellDesign(item: item)
-                        }
-    
-                    }.frame(height: 150)
+                        ForEach(items){ item in
+                            
+                            if item.type == "toDrink" {
+                                CellDesign(item: item)
+                            }
+                            
+                        }.frame(height: 140)
+                    }
+                    
+                    Section(header:Text("to eat")){
+                        
+                        ForEach(items){ item in
+                            
+                            if item.type == "toEat" {
+                                CellDesign(item: item)
+                            }
+                            
+                        }.frame(height: 140)
+                    }
+                    
+                    Section(header:Text("to enjoy")){
+                        
+                        ForEach(items){ item in
+                            
+                            if item.type == "toEnjoy" {
+                                CellDesign(item: item)
+                            }
+                            
+                        }.frame(height: 140)
+                    }
+                    
+                    Section(header:Text("to rest")){
+                        
+                        ForEach(items){ item in
+                            
+                            if item.type == "toRest" {
+                                CellDesign(item: item)
+                            }
+                            
+                        }.frame(height: 140)
+                    }
+                    
                 }
                 
-                Section(header:Text("to eat")){
-                    
-                    ForEach(items){ item in
-                        
-                        if item.type == "toEat" {
-                            CellDesign(item: item)
-                        }
-    
-                    }.frame(height: 150)
-                }
+                NavigationLink(destination: OrderVC(order: order)) {
+                    Text("ORDER")
+                        .frame(minWidth: 0, maxWidth: 300)
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
+                        .cornerRadius(40)
+                        .font(.title)
+                }.navigationBarTitle("Menu")
                 
-                Section(header:Text("to enjoy")){
-                    
-                    ForEach(items){ item in
-                        
-                        if item.type == "toEnjoy" {
-                            CellDesign(item: item)
-                        }
-    
-                    }.frame(height: 150)
-                }
-                
-                Section(header:Text("to rest")){
-                    
-                    ForEach(items){ item in
-                        
-                        if item.type == "toRest" {
-                            CellDesign(item: item)
-                        }
-    
-                    }.frame(height: 150)
-                }
-                
-                Button("ORDER", action : {
-                }).buttonStyle(.borderedProminent)
-                
-                NavigationLink("Order Page", destination: OrderVC(order: order))
-                
-            }.navigationBarTitle("Menu")
+            }
+            
         }.onAppear(){
             let item1 = MenuItem(id: "1water", name: "Water", photo: "1.water", price: 0.5, type: "toDrink", count: 0)
             let item2 = MenuItem(id: "5doner", name: "Doner", photo: "5.doner", price: 5.0, type: "toEat", count: 0)

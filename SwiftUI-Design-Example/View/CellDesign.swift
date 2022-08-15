@@ -24,10 +24,10 @@ struct CellDesign: View {
                 
                 VStack(alignment: .trailing){
                     
-                    Stepper("", value: $count, in: 0...10)
+                    Stepper("", value: $count, in: 0...10).padding(.top, 15)
                     Text("Count:  \(self.item.count + count)")
                     Spacer()
-                    Text("Sum: \(String(format: "%.2f", Float(self.item.count + count)*(self.item.price!)))")
+                    Text("Sum: \(String(format: "%.2f", Float(self.item.count + count)*(self.item.price!)))").padding(.bottom, 15)
                 
                 }
                 
