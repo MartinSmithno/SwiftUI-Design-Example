@@ -15,6 +15,7 @@
 		2C5E1D9128A6CB3D00B1C108 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5E1D9028A6CB3D00B1C108 /* Preview Assets.xcassets */; };
 		2C5E1D9A28A6E36100B1C108 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E1D9928A6E36100B1C108 /* MenuItem.swift */; };
 		2C5E1D9C28A6E71400B1C108 /* CellDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E1D9B28A6E71400B1C108 /* CellDesign.swift */; };
+		2C98043728B01F5600E631B7 /* OrderCellDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C98043628B01F5600E631B7 /* OrderCellDesign.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		2C5E1D9028A6CB3D00B1C108 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2C5E1D9928A6E36100B1C108 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		2C5E1D9B28A6E71400B1C108 /* CellDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDesign.swift; sourceTree = "<group>"; };
+		2C98043628B01F5600E631B7 /* OrderCellDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCellDesign.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				2C5E1D8B28A6CB3A00B1C108 /* ContentView.swift */,
 				2C5E1D8928A6CB3A00B1C108 /* SwiftUI_Design_ExampleApp.swift */,
 				2C498FE928A9806A0095146E /* OrderVC.swift */,
+				2C98043628B01F5600E631B7 /* OrderCellDesign.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				2C5E1D8A28A6CB3A00B1C108 /* SwiftUI_Design_ExampleApp.swift in Sources */,
 				2C498FEC28A982E60095146E /* CheckboxStyle.swift in Sources */,
 				2C498FEA28A9806A0095146E /* OrderVC.swift in Sources */,
+				2C98043728B01F5600E631B7 /* OrderCellDesign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
