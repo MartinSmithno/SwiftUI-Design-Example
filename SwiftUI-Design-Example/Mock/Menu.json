@@ -1,0 +1,115 @@
+[
+    {
+        "id": "01Water",
+        "name": "Water",
+        "photo": "01.water",
+        "price": 0.5,
+        "type": "toDrink",
+        "count": 0
+    },
+    {
+        "id": "02Ayran",
+        "name": "Ayran",
+        "photo": "02.ayran",
+        "price": 1.0,
+        "type": "toDrink",
+        "count": 0
+    },
+    {
+        "id": "03Cola",
+        "name": "CocaCola",
+        "photo": "03.cola",
+        "price": 1.5,
+        "type": "toDrink",
+        "count": 0
+    },
+    {
+        "id": "04Burger",
+        "name": "Hamburger",
+        "photo": "04.burger",
+        "price": 3.5,
+        "type": "toEat",
+        "count": 0
+    },
+    {
+        "id": "05Doner",
+        "name": "Doner",
+        "photo": "05.doner",
+        "price": 3.5,
+        "type": "toEat",
+        "count": 0
+    },
+    {
+        "id": "06Kebap",
+        "name": "Kebap",
+        "photo": "06.kebap",
+        "price": 4.0,
+        "type": "toEat",
+        "count": 0
+    },
+    {
+        "id": "07Lahmacun",
+        "name": "Lahmacun",
+        "photo": "07.lahmacun",
+        "price": 2.5,
+        "type": "toEat",
+        "count": 0
+    },
+    {
+        "id": "08Pide",
+        "name": "Pide",
+        "photo": "08.pide",
+        "price": 3.0,
+        "type": "toEat",
+        "count": 0
+    },
+    {
+        "id": "09CurlyFries",
+        "name": "Curly Fries",
+        "photo": "09.curly_fries",
+        "price": 2.0,
+        "type": "toEnjoy",
+        "count": 0
+    },
+    {
+        "id": "10Salad",
+        "name": "Salad",
+        "photo": "10.salad",
+        "price": 2.0,
+        "type": "toEnjoy",
+        "count": 0
+    },
+    {
+        "id": "11Tursu",
+        "name": "Tursu",
+        "photo": "11.tursu",
+        "price": 2.5,
+        "type": "toEnjoy",
+        "count": 0
+    },
+    {
+        "id": "12Baklava",
+        "name": "Baklava",
+        "photo": "12.baklava",
+        "price": 3.0,
+        "type": "toRest",
+        "count": 0
+    },
+    {
+        "id": "13Kadayif",
+        "name": "Kadayif",
+        "photo": "13.kadayif",
+        "price": 2.5,
+        "type": "toRest",
+        "count": 0
+    },
+    {
+        "id": "14Sutlac",
+        "name": "Sutlac",
+        "photo": "14.sutlac",
+        "price": 2.0,
+        "type": "toRest",
+        "count": 0
+    }
+]
+

@@ -15,10 +15,12 @@ struct OrderVC: View {
                 
                 ForEach(order!){ item in
                     
-                    OrderCellDesign(item: item)
+                    if item.count != 0{
+                        OrderCellDesign(item: item)
+                    }
                     
                 }.frame(height: 140)
-            
+                
                 Toggle(isOn: $orderIsApproved) {
                     Text("Order Approvement")
                 }.toggleStyle(CheckboxStyle())
