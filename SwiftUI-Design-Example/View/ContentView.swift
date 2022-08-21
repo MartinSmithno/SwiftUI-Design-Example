@@ -5,7 +5,7 @@ struct ContentView: View {
     @State private var items: [MenuItem] = [MenuItem]()
     
     //We need to create array or we can create .json mock data file to feed the list
-    @State var order: [MenuItem] = [MenuItem(id: "13kadayif", name: "Kadayif", photo: "13.kadayif", price: 3.5, type: "toRest", count: 0)]
+    @State var order: [MenuItem] = [MenuItem(id: "13kadayif", name: "Kadayif", photo: "13.kadayif", price: 3.5, type: "toRest", count: 0), MenuItem(id: "5doner", name: "Doner", photo: "5.doner", price: 5.0, type: "toEat", count: 3)]
     
     var body: some View {
         
