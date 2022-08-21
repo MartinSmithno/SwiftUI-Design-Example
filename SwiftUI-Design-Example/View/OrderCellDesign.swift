@@ -2,7 +2,7 @@ import SwiftUI
 
 struct OrderCellDesign: View {
     
-    var item: MenuItem = MenuItem(id: "13kadayif", name: "Kadayif", photo: "13.kadayif", price: 3.5, type: "toRest", count: 2)
+    var item: MenuItem = MenuItem()
     
     var body: some View {
         GeometryReader { geometry in
