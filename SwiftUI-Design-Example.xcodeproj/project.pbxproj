@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C498FEA28A9806A0095146E /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C498FE928A9806A0095146E /* OrderVC.swift */; };
+		2C498FEC28A982E60095146E /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C498FEB28A982E60095146E /* CheckboxStyle.swift */; };
 		2C5E1D8A28A6CB3A00B1C108 /* SwiftUI_Design_ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E1D8928A6CB3A00B1C108 /* SwiftUI_Design_ExampleApp.swift */; };
 		2C5E1D8C28A6CB3A00B1C108 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E1D8B28A6CB3A00B1C108 /* ContentView.swift */; };
 		2C5E1D8E28A6CB3D00B1C108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5E1D8D28A6CB3D00B1C108 /* Assets.xcassets */; };
 		2C5E1D9128A6CB3D00B1C108 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5E1D9028A6CB3D00B1C108 /* Preview Assets.xcassets */; };
 		2C5E1D9A28A6E36100B1C108 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E1D9928A6E36100B1C108 /* MenuItem.swift */; };
 		2C5E1D9C28A6E71400B1C108 /* CellDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E1D9B28A6E71400B1C108 /* CellDesign.swift */; };
+		2C98043728B01F5600E631B7 /* OrderCellDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C98043628B01F5600E631B7 /* OrderCellDesign.swift */; };
+		2CD95A9728B2A7E2002972D8 /* Menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CD95A9628B2A7E2002972D8 /* Menu.json */; };
+		2CD95A9928B2A8D5002972D8 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD95A9828B2A8D5002972D8 /* ItemModel.swift */; };
+		2CD95A9B28B2A9A5002972D8 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD95A9A28B2A9A5002972D8 /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C498FE928A9806A0095146E /* OrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderVC.swift; sourceTree = "<group>"; };
+		2C498FEB28A982E60095146E /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
 		2C5E1D8628A6CB3A00B1C108 /* SwiftUI-Design-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Design-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5E1D8928A6CB3A00B1C108 /* SwiftUI_Design_ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Design_ExampleApp.swift; sourceTree = "<group>"; };
 		2C5E1D8B28A6CB3A00B1C108 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +31,10 @@
 		2C5E1D9028A6CB3D00B1C108 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2C5E1D9928A6E36100B1C108 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		2C5E1D9B28A6E71400B1C108 /* CellDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDesign.swift; sourceTree = "<group>"; };
+		2C98043628B01F5600E631B7 /* OrderCellDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCellDesign.swift; sourceTree = "<group>"; };
+		2CD95A9628B2A7E2002972D8 /* Menu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Menu.json; sourceTree = "<group>"; };
+		2CD95A9828B2A8D5002972D8 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		2CD95A9A28B2A9A5002972D8 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,7 @@
 				2C5E1D9828A6E2E600B1C108 /* View */,
 				2C5E1D8D28A6CB3D00B1C108 /* Assets.xcassets */,
 				2C5E1D8F28A6CB3D00B1C108 /* Preview Content */,
+				2CAAE95428B273B100703AC8 /* Mock */,
 			);
 			path = "SwiftUI-Design-Example";
 			sourceTree = "<group>";
@@ -75,6 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				2C5E1D9928A6E36100B1C108 /* MenuItem.swift */,
+				2C498FEB28A982E60095146E /* CheckboxStyle.swift */,
+				2CD95A9828B2A8D5002972D8 /* ItemModel.swift */,
+				2CD95A9A28B2A9A5002972D8 /* ModelData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -85,8 +101,18 @@
 				2C5E1D9B28A6E71400B1C108 /* CellDesign.swift */,
 				2C5E1D8B28A6CB3A00B1C108 /* ContentView.swift */,
 				2C5E1D8928A6CB3A00B1C108 /* SwiftUI_Design_ExampleApp.swift */,
+				2C498FE928A9806A0095146E /* OrderVC.swift */,
+				2C98043628B01F5600E631B7 /* OrderCellDesign.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2CAAE95428B273B100703AC8 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				2CD95A9628B2A7E2002972D8 /* Menu.json */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C5E1D9128A6CB3D00B1C108 /* Preview Assets.xcassets in Resources */,
+				2CD95A9728B2A7E2002972D8 /* Menu.json in Resources */,
 				2C5E1D8E28A6CB3D00B1C108 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,8 +188,13 @@
 			files = (
 				2C5E1D9A28A6E36100B1C108 /* MenuItem.swift in Sources */,
 				2C5E1D9C28A6E71400B1C108 /* CellDesign.swift in Sources */,
+				2CD95A9B28B2A9A5002972D8 /* ModelData.swift in Sources */,
+				2CD95A9928B2A8D5002972D8 /* ItemModel.swift in Sources */,
 				2C5E1D8C28A6CB3A00B1C108 /* ContentView.swift in Sources */,
 				2C5E1D8A28A6CB3A00B1C108 /* SwiftUI_Design_ExampleApp.swift in Sources */,
+				2C498FEC28A982E60095146E /* CheckboxStyle.swift in Sources */,
+				2C498FEA28A9806A0095146E /* OrderVC.swift in Sources */,
+				2C98043728B01F5600E631B7 /* OrderCellDesign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
