@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
         
-    @State var order: [Item] = []
+    @State var order: [(item: Item, count: Int)] = []
     
     var body: some View {
         
@@ -67,9 +67,7 @@ struct ContentView: View {
                         .cornerRadius(40)
                         .font(.title)
                 }.navigationBarTitle("Menu")
-                
             }
-            
         }
     }
 }
