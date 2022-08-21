@@ -3,7 +3,7 @@ import SwiftUI
 
 struct OrderVC: View {
     
-    @State var order: [MenuItem]?
+    @State var order: [Item]
     
     @State var orderIsApproved: Bool = false
     @State var paymentIsApproved: Bool = false
@@ -13,7 +13,7 @@ struct OrderVC: View {
             
             List(){
                 
-                ForEach(order!){ item in
+                ForEach(order){ item in
                     
                     if item.count != 0{
                         OrderCellDesign(item: item)
