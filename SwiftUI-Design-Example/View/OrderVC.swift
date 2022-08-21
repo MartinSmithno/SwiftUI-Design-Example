@@ -3,7 +3,7 @@ import SwiftUI
 
 struct OrderVC: View {
     
-    @State var order: [MenuItem]
+    @State var order: [MenuItem]?
     
     @State var orderIsApproved: Bool = false
     @State var paymentIsApproved: Bool = false
@@ -13,9 +13,9 @@ struct OrderVC: View {
             
             List(){
                 
-                ForEach(order){ item in
+                ForEach(order!){ item in
                     
-                    OrderCellDesign()
+                    OrderCellDesign(item: item)
                     
                 }.frame(height: 140)
             
