@@ -14,7 +14,9 @@ struct OrderVC: View {
             
             List(){
                 ForEach(order){ item in
-                    OrderCellDesign(item: item)
+                    if item.count != 0 {
+                        OrderCellDesign(item: item)
+                    }
                 }.frame(height: 140)
             }
             
