@@ -3,24 +3,22 @@ import SwiftUI
 
 struct OrderVC: View {
     
-    @State var order: [(item: Item, count: Int)]
+    @State var order: [Item]
     
     @State var orderIsApproved: Bool = false
     @State var paymentIsApproved: Bool = false
+    @State private var showingCredits = false
     
     var body: some View {
         VStack(){
             
             List(){
-                
                 ForEach(order){ item in
-                    
-                    if item.count != 0{
-                        OrderCellDesign(item: item.item)
-                    }
-                    
+                    OrderCellDesign(item: item)
                 }.frame(height: 140)
-                
+            }
+            
+            VStack(alignment: .leading){
                 Toggle(isOn: $orderIsApproved) {
                     Text("Order Approvement")
                 }.toggleStyle(CheckboxStyle())
@@ -28,10 +26,9 @@ struct OrderVC: View {
                 Toggle(isOn: $paymentIsApproved) {
                     Text("Payment Approvement")
                 }.toggleStyle(CheckboxStyle())
-                
             }
             
-            NavigationLink(destination: OrderVC(order: order)) {
+            NavigationLink(destination: ConfirmationVC()) {
                 Text("CONFIRM")
                     .frame(minWidth: 0, maxWidth: 300)
                     .padding()

@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
         
-    @State var order: [(item: Item, count: Int)] = []
+    @State var order: [Item] = []
     
     var body: some View {
         
