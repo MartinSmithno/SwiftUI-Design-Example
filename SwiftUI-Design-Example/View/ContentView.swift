@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct ContentView: View {
-        
-    @State var order: [Item] = []
+    
+    @State var order : [Item] = []
     
     var body: some View {
         
@@ -15,50 +15,50 @@ struct ContentView: View {
                     Section(header:Text("to drink")){
                         
                         ForEach(items){ item in
-                            
                             if item.type == "toDrink" {
-                                CellDesign(item: item)
+                                CellDesign(item: item).onTapGesture{
+                                    order.append(item)
+                                }
                             }
-                            
-                        }.frame(height: 140)
+                        }.frame(height: 110)
                     }
                     
                     Section(header:Text("to eat")){
                         
                         ForEach(items){ item in
-                            
                             if item.type == "toEat" {
-                                CellDesign(item: item)
+                                CellDesign(item: item).onTapGesture{
+                                    order.append(item)
+                                }
                             }
-                            
-                        }.frame(height: 140)
+                        }.frame(height: 110)
                     }
                     
                     Section(header:Text("to enjoy")){
                         
                         ForEach(items){ item in
-                            
                             if item.type == "toEnjoy" {
-                                CellDesign(item: item)
+                                CellDesign(item: item).onTapGesture{
+                                    order.append(item)
+                                }
                             }
-                            
-                        }.frame(height: 140)
+                        }.frame(height: 110)
                     }
                     
                     Section(header:Text("to rest")){
                         
                         ForEach(items){ item in
-                            
                             if item.type == "toRest" {
-                                CellDesign(item: item)
+                                CellDesign(item: item).onTapGesture{
+                                    order.append(item)
+                                }
                             }
-                            
-                        }.frame(height: 140)
+                        }.frame(height: 110)
                     }
                     
                 }
                 
-                NavigationLink(destination: OrderVC(order: order)) {
+                NavigationLink(destination: OrderVC(order: self.order)) {
                     Text("ORDER")
                         .frame(minWidth: 0, maxWidth: 300)
                         .padding()
@@ -67,9 +67,8 @@ struct ContentView: View {
                         .cornerRadius(40)
                         .font(.title)
                 }.navigationBarTitle("Menu")
-                
             }
-            
         }
     }
 }
+

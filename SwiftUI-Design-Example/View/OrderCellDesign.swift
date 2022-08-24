@@ -11,21 +11,13 @@ struct OrderCellDesign: View {
                 
                 Image(self.item.photo)
                     .resizable()
-                    .frame(width: 100, height: 100)
+                    .frame(width: 50, height: 50)
+                    .cornerRadius(10)
+                Text(self.item.name).bold().font(.body)
+                Spacer()
+                Text("\(String(format: "%.2f", self.item.price)) $").font(.body).foregroundColor(.blue).underline()
                 
-                VStack(alignment:.leading, spacing: 40){
-                    
-                    Text(self.item.name).bold().font(.title3)
-                   
-                    HStack(){
-                        
-                        Text("Count: \(self.item.count)")
-                        Spacer()
-                        Text("Sum: $ \(String(format: "%.2f", Float(self.item.count)*(self.item.price)))").underline().foregroundColor(.blue)
-                        
-                    }
-                }
-            }.frame(width: geometry.size.width, height: 150)
+            }.frame(width: geometry.size.width, height: 50)
         }
     }
 }
