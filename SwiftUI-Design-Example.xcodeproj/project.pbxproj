@@ -72,6 +72,7 @@
 				2C5E1D9728A6E2D900B1C108 /* Model */,
 				2C5E1D9828A6E2E600B1C108 /* View */,
 				2C5E1D8D28A6CB3D00B1C108 /* Assets.xcassets */,
+				2CA1E23E28B6AA0E00432546 /* Extras */,
 				2C5E1D8F28A6CB3D00B1C108 /* Preview Content */,
 				2CAAE95428B273B100703AC8 /* Mock */,
 			);
@@ -90,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				2C5E1D9928A6E36100B1C108 /* MenuItem.swift */,
-				2C498FEB28A982E60095146E /* CheckboxStyle.swift */,
 				2CD95A9828B2A8D5002972D8 /* ItemModel.swift */,
 				2CD95A9A28B2A9A5002972D8 /* ModelData.swift */,
 			);
@@ -102,12 +102,20 @@
 			children = (
 				2C5E1D9B28A6E71400B1C108 /* CellDesign.swift */,
 				2C5E1D8B28A6CB3A00B1C108 /* ContentView.swift */,
-				2C5E1D8928A6CB3A00B1C108 /* SwiftUI_Design_ExampleApp.swift */,
 				2C498FE928A9806A0095146E /* OrderVC.swift */,
 				2C98043628B01F5600E631B7 /* OrderCellDesign.swift */,
 				2CA1179F28B553AC008F397D /* ConfirmationVC.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2CA1E23E28B6AA0E00432546 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				2C5E1D8928A6CB3A00B1C108 /* SwiftUI_Design_ExampleApp.swift */,
+				2C498FEB28A982E60095146E /* CheckboxStyle.swift */,
+			);
+			path = Extras;
 			sourceTree = "<group>";
 		};
 		2CAAE95428B273B100703AC8 /* Mock */ = {
